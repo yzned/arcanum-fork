@@ -1074,7 +1074,7 @@ export const CandleChart = ({
 	textColor = "#8A8B8C",
 	height = 400,
 }: CandleChartProps) => {
-	const chartContainerRef = useRef(null);
+	const chartContainerRef = useRef<HTMLDivElement>(null);
 
 	const [candleData, setCandleData] = useState<CandleData>(
 		MOCK_DATA[MOCK_DATA.length - 1],
@@ -1132,7 +1132,7 @@ export const CandleChart = ({
 			});
 
 			const handleResize = () => {
-				chart.applyOptions({ width: chartContainerRef.current.clientWidth });
+				chart.applyOptions({ width: chartContainerRef?.current?.clientWidth });
 			};
 
 			window.addEventListener("resize", handleResize);

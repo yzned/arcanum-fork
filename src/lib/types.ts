@@ -5,7 +5,7 @@ import type { Address } from "viem";
 export type Token = {
 	name: string;
 	symbol: string;
-	address: Address;
+	address?: Address;
 	creationId?: string;
 	priceFeedType?:
 		| "UniswapV3"

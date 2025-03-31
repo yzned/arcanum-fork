@@ -58,7 +58,7 @@ export const LinearChart = ({
 	textColor = "#8A8B8C",
 	height = 400,
 }: LinearChartProps) => {
-	const chartContainerRef = useRef(null);
+	const chartContainerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		if (chartContainerRef.current) {

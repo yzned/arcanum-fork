@@ -203,7 +203,7 @@ export const QuickSearch = forwardRef(
 								filteredItems.length !== 0 && "py-2",
 							)}
 						>
-							{filteredItems.map((item, index) => (
+							{filteredItems.map((item) => (
 								<QuickSearchItem
 									currentValue={currentValue}
 									item={item}

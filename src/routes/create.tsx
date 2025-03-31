@@ -1,4 +1,4 @@
-import { TokenSetup } from "@/components/createPortfolio/TokenSetup";
+import { TokenSetup } from "@/components/createPortfolio/tokenSetup";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FileInput } from "@/components/ui/file";
