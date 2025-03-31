@@ -1,6 +1,6 @@
 import type { Token } from "@/lib/types";
 import BigNumber from "bignumber.js";
-import { autorun, makeAutoObservable } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { v4 as uuidv4 } from "uuid";
 import type { Address } from "viem";
 

@@ -1084,7 +1084,7 @@ export const CandleChart = ({
 		if (chartContainerRef.current) {
 			const chart = createChart(chartContainerRef.current, {
 				timeScale: {
-					tickMarkFormatter: (time) => {
+					tickMarkFormatter: (time: string) => {
 						const date = new Date(time);
 						return date.toLocaleDateString("en-US", {
 							month: "short",

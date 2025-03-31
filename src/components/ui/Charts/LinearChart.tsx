@@ -1,5 +1,5 @@
 import { AreaSeries, ColorType, createChart } from "lightweight-charts";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 type LinearData = {
 	time: string;
@@ -90,7 +90,7 @@ export const LinearChart = ({
 			newSeries.setData(MOCK_DATA);
 
 			const handleResize = () => {
-				chart.applyOptions({ width: chartContainerRef.current.clientWidth });
+				chart.applyOptions({ width: chartContainerRef?.current?.clientWidth });
 			};
 
 			window.addEventListener("resize", handleResize);

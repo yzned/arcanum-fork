@@ -2,7 +2,6 @@ import { Input } from "@/components/ui/input";
 import type { Token } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { type FC, useEffect, useRef, useState } from "react";
-import ArrowIcon from "/src/icons/arrow.svg?react";
 import FilterIcon from "/src/icons/filter.svg?react";
 import SearchIcon from "/src/icons/search.svg?react";
 import SmallXIcon from "/src/icons/smallX.svg?react";

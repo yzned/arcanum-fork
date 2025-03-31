@@ -14,7 +14,7 @@ export const localeResources = {
 export const APP_LANGUAGES = {
 	ru: "ru",
 	en: "en",
-	сh: "ch",
+	ch: "ch",
 } as const;
 
 export const changeLanguage = (lang: APP_LANGUAGES_TYPE) => {

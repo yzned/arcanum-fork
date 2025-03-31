@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { createFileRoute } from "@tanstack/react-router";
 
-import { LinearChart } from "@/components/ui/charts/LinearChart";
 import { Input } from "@/components/ui/input";
 import { ModalBase } from "@/components/ui/modalBase";
 import { cn } from "@/lib/utils";
-import { ExplorePortfolioStore } from "@/store/explore-portfolio";
-import { StoreProvider, useStoreProvider } from "@/store/store-context";
 import { observer } from "mobx-react-lite";
 import { useEffect, useRef, useState } from "react";
 
@@ -28,7 +25,7 @@ import { BalancesTable } from "@/components/explorePortfolio/tables/BalanceTable
 import { HistoryTable } from "@/components/explorePortfolio/tables/HistoryTable";
 import { PortfolioTable } from "@/components/explorePortfolio/tables/PortfolioTable";
 import { PositionsTable } from "@/components/explorePortfolio/tables/PositionsTable";
-import { CandleChart } from "@/components/ui/charts/CandleChart";
+import { CandleChart } from "@/components/ui/Charts/CandleChart";
 import { FindAsset } from "@/components/ui/findAsset";
 import { PriceChange } from "@/components/ui/priceChange";
 import { Toggle } from "@/components/ui/toggle";
@@ -36,6 +33,7 @@ import { useExplorePortfolio } from "@/contexts/ExplorePortfolioContext";
 import { ARBITRUM_TOKENS } from "@/lib/constants";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { useTranslation } from "react-i18next";
+import { LinearChart } from "@/components/ui/Charts/LinearChart";
 
 export const Route = createFileRoute("/explore/$id")({
 	component: RouteComponent,
