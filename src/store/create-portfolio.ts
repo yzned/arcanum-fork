@@ -125,7 +125,7 @@ export class CreatePortfolioStore {
 	addNewToken() {
 		this.tokens.push({
 			creationId: uuidv4(),
-			address: undefined,
+			address: "" as any,
 			logo: "",
 			name: "",
 			creationState: "new",

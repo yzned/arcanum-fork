@@ -1,5 +1,5 @@
 import * as SelectPrimitive from "@radix-ui/react-select";
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { CheckIcon } from "lucide-react";
 import ChevronIcon from "../../icons/chevron.svg?react";
 
 import type * as React from "react";
@@ -116,19 +116,6 @@ function SelectItem({
 			</span>
 			<SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
 		</SelectPrimitive.Item>
-	);
-}
-
-function SelectSeparator({
-	className,
-	...props
-}: React.ComponentProps<typeof SelectPrimitive.Separator>) {
-	return (
-		<SelectPrimitive.Separator
-			data-slot="select-separator"
-			className={cn("-mx-1 pointer-events-none my-1 h-px bg-border", className)}
-			{...props}
-		/>
 	);
 }
 

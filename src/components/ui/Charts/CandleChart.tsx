@@ -1126,7 +1126,7 @@ export const CandleChart = ({
 			chart.subscribeCrosshairMove((item) => {
 				if (item.seriesData) {
 					for (const [_, value] of item.seriesData) {
-						setCandleData(value);
+						setCandleData(value as any);
 					}
 				}
 			});
